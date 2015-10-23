@@ -6,6 +6,15 @@ rvm:
   - 2.2
 gemfile:
   - Gemfile
+  - gemfiles/Gemfile-rails.5.0.x
+matrix:
+  exclude:
+  - rvm: 1.9.3
+    gemfile: gemfiles/Gemfile-rails.5.0.x
+  - rvm: 2.0.0
+    gemfile: gemfiles/Gemfile-rails.5.0.x
+  - rvm: 2.1
+    gemfile: gemfiles/Gemfile-rails.5.0.x
 notifications:
   email: false
   campfire:

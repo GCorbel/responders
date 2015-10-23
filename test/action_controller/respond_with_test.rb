@@ -1,4 +1,5 @@
 require 'test_helper'
+require 'rails-controller-testing'
 
 class Customer < Struct.new(:name, :id)
   extend ActiveModel::Naming
